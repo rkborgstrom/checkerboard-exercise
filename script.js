@@ -8,7 +8,8 @@ document.addEventListener('DOMContentLoaded', function () {
     return (`rgb(${numberOne}, ${numberTwo}, ${numberThree})`); 
  }
 
-  function createCheckerboard() {
+  const createCheckerboard = function() {
+    document.body.innerHTML = "";
     for (let i = 0; i < 63; i++) {
       let square = document.createElement("div");
       square.style.cssText = "width: 11.1%; float: left; padding-bottom: 11.1%;";
@@ -23,6 +24,7 @@ document.addEventListener('DOMContentLoaded', function () {
   
     }
   }
-  createCheckerboard();
+  // createCheckerboard();
+  setInterval(createCheckerboard, 600);
 
-});
+}); 
