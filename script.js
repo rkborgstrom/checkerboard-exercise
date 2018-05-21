@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     }
   }
-  createCheckerboard();
-  // setInterval(createCheckerboard, 1200);
+  // createCheckerboard();
+  setInterval(createCheckerboard, 400);
 
 });
